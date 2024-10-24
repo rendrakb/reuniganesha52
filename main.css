@@ -2,16 +2,31 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+h1, p, ul {
+    text-align: left;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 0;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     min-height: 100vh;
-    padding: 145px 0;
+    background-color:rgb(255,255,255);
+    background-image:
+    radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px, transparent 25%),
+    radial-gradient(at 100% 25%, rgb(255, 100, 100) 0px, transparent 25%),
+    radial-gradient(at 100% 50%, rgb(100, 150, 255) 0px, transparent 25%),
+    radial-gradient(at 100% 100%, rgb(255, 100, 100) 0px, transparent 25%);
+    background-size: cover;
 }
 
 h1 {
@@ -29,6 +44,7 @@ ul {
 
 li {
     margin: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 a {
@@ -42,9 +58,9 @@ a:hover {
 
 section {
     min-height: 100vh;
-    padding: 50px 50px;
-    border-bottom: 1px solid #ccc;
-    width: 100%
+    padding: 50px 20px;
+    border-top: 1px solid #ccc;
+    width: 80%;
 }
 
 a[href="#top"] {
