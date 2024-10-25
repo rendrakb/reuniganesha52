@@ -2,6 +2,36 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 100vh;
+    background-color:rgb(255, 255, 255);
+    background-image:
+    radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px, transparent 25%),
+    radial-gradient(at 100% 25%, rgb(255, 100, 100) 0px, transparent 25%),
+    radial-gradient(at 100% 50%, rgb(100, 150, 255) 0px, transparent 25%),
+    radial-gradient(at 100% 75%, rgb(255, 255, 100) 0px, transparent 25%),
+    radial-gradient(at 100% 100%, rgb(255, 100, 100) 0px, transparent 25%);
+    background-size: 110% 110%;
+    background-repeat: repeat;
+    animation: moveGradient 5s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% { background-position: 0 0; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0 0; }
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,32 +39,23 @@ html {
     width: 80%;
 }
 
-h1, p, ul {
-    text-align: left;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Roboto Mono', monospace;
-    min-height: 100vh;
-    background-color:rgb(255,255,255);
-    background-image:
-    radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px, transparent 25%),
-    radial-gradient(at 100% 25%, rgb(255, 100, 100) 0px, transparent 25%),
-    radial-gradient(at 100% 50%, rgb(100, 150, 255) 0px, transparent 25%),
-    radial-gradient(at 100% 100%, rgb(255, 100, 100) 0px, transparent 25%);
-    background-size: cover;
-}
-
 h1 {
-    margin-bottom: 20px;
+    font-size: 24
 }
 
-p {
-    margin-top: 10px;
+h2 {
+    font-size: 18
+}
+
+h3 {
+    font-size: 14
+}
+
+section {
+    min-height: 100vh;
+    border-bottom: 1px solid #ccc;
+    width: 80%;
+    padding-bottom: 50px;
 }
 
 ul {
@@ -56,21 +77,24 @@ a:hover {
     color: #ff0000;
 }
 
-section {
-    min-height: 100vh;
-    padding: 50px 20px;
-    border-top: 1px solid #ccc;
-    width: 80%;
-}
-
-a[href="#top"] {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-#top {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+#myBtn {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    fill: #7777;
+    background-color: #7777;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: #ffff;
+  }

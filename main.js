@@ -11,3 +11,26 @@ $(document).ready(function() {
         }
     });
 });
+
+
+//back to top button
+
+let mybutton = document.getElementById("myBtn");
+
+//show button after some scroll
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+//scroll to top action when clicked
+
+function topFunction() {
+    $('html, body').animate({ scrollTop: 0 }, 500);
+}
