@@ -15,10 +15,21 @@ $(document).ready(function() {
 //nav button 
 
 function toggleMenu() {
-  var menu = document.getElementById("myNavMenu");
-  if (menu.style.display === "none" || menu.style.display === "") {
-      menu.style.display = "block";
-  } else {
-      menu.style.display = "none";
-  }
+    var menu = document.getElementById("myNavMenu");
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+        document.addEventListener("click", closeMenu);
+    } else {
+        menu.style.display = "none";
+        document.removeEventListener("click", closeMenu);
+    }
+}
+
+function closeMenu(event) {
+    var menu = document.getElementById("myNavMenu");
+    var button = document.getElementById("myNavBtn");
+    if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.style.display = "none";
+        document.removeEventListener("click", closeMenu);
+    }
 }
