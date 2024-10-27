@@ -5,15 +5,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@200;400;700&display=swap">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="icon" type="image/svg+xml" href="assets/images/icon.svg">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <link id="favicon" rel="icon" type="image/svg+xml" href="assets/images/icon.svg">
     </head>
 <body>     
+    <div id="top"></div>
+    <div class="iconbackground"><img id="header-icon" src="assets/images/icon.svg" alt="icon"></div>
     <div class="header">
-        <h1>REUNI 10 TAHUN <br> GANESHA 52</h1>
-        <img id="headericon" src="assets/images/icon.svg" alt="icon"></img>
+        <h1>Reuni 10 Tahun<br>Ganesha 52</h1>
     </div>
     <section id="beranda">
         <div class="container">
@@ -90,6 +91,9 @@
             <p> Untuk kontak lebih lanjut dapat menghubungi <b>rendrakb@gmail.com</b> </p>
         </div>
     </section>
+    <div id="back-to-top-container">
+            <button id="back-to-top"><a href="#top">↑</a></button>
+    </div>
     <div id="navContainer">
         <button onclick="toggleMenu()" id="myNavBtn" title="Navigate">≡</button>
         <nav id="myNavMenu" style="display:none;">

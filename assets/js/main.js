@@ -1,4 +1,4 @@
-//smooth scroll on click
+//smooth scroll on href click
 
 $(document).ready(function() {
     $('a[href^="#"]').on('click', function(event) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 });
 
-//nav button 
+//nav button open when clicked
 
 function toggleMenu() {
     var menu = document.getElementById("myNavMenu");
@@ -25,6 +25,8 @@ function toggleMenu() {
     }
 }
 
+//nav button closed when clicked anything else
+
 function closeMenu(event) {
     var menu = document.getElementById("myNavMenu");
     var button = document.getElementById("myNavBtn");
@@ -33,3 +35,35 @@ function closeMenu(event) {
         document.removeEventListener("click", closeMenu);
     }
 }
+
+//favicon rotation animation
+
+document.addEventListener('DOMContentLoaded', function() {
+    const favicon = document.getElementById('favicon');
+    let angle = 0;
+
+    function rotateFavicon() {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        const img = new Image();
+        img.src = 'assets/images/icon.svg'; // Ensure the path is correct
+
+        img.onload = function() {
+            const size = 32;
+            canvas.width = size;
+            canvas.height = size;
+
+            context.clearRect(0, 0, size, size);
+            context.save();
+            context.translate(size / 2, size / 2);
+            context.rotate(angle * Math.PI / 180);
+            context.drawImage(img, -size / 2, -size / 2, size, size);
+            context.restore();
+
+            angle += 6;
+            favicon.href = canvas.toDataURL('image/png');
+        };
+    }
+
+    setInterval(rotateFavicon, 50);
+});
