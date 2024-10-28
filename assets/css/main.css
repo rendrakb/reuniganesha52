@@ -10,8 +10,11 @@ body {
   text-align: left;
 
   background-color: white;
-  background-image:
-    radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px,transparent 25%),
+  background-image: radial-gradient(
+      at 100% 0%,
+      rgb(100, 150, 255) 0px,
+      transparent 25%
+    ),
     radial-gradient(at 100% 25%, rgb(255, 100, 100) 0px, transparent 25%),
     radial-gradient(at 100% 50%, rgb(255, 255, 100) 0px, transparent 25%),
     radial-gradient(at 100% 75%, rgb(100, 150, 255) 0px, transparent 25%),
@@ -138,7 +141,7 @@ section {
   text-decoration: none;
 }
 
-#back-to-top:hover {
+#back-to-top-button:hover {
   background-color: lightgrey;
 }
 

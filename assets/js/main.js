@@ -9,11 +9,17 @@ $(document).ready(function () {
         {
           scrollTop: target.offset().top,
         },
-        500
+        250
       );
     }
   });
 });
+
+//back to top button
+
+function backTop() {
+  $("html, body").animate({ scrollTop: 0 }, 250);
+}
 
 //nav button open when clicked
 
