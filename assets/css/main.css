@@ -3,11 +3,12 @@ body {
     font-weight: 200;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     padding-left: 25px;
     padding-right: 25px;
     justify-content: flex-start;
     text-align: left;
-    min-height: 100vh;
+
     background-color: white;
     background-image:
     radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px, transparent 25%),
@@ -29,9 +30,9 @@ body {
 }
 
 section {
+    width: 85%;
     min-height: 100vh;
     border-bottom: 1px solid #ccc;
-    width: 85%;
     padding-bottom: 50px;
     z-index: 2;
 }
@@ -53,15 +54,26 @@ section {
     z-index: 2;
 }
 
+.gradient-text {
+    background-image: linear-gradient(30deg, rgb(100, 150, 255), rgb(255, 100, 100));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+	font-weight: 400 !important;
+}
+
 .icon-bg img#header-icon {
     display: flex;
     position: fixed;
+    z-index: 1;
     top: 100px;
     right: -25px;
     transform: translate(-50%, -50%);
-    z-index: 1;
     width: 100px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
@@ -78,29 +90,18 @@ section {
     padding: 0;
 }
 
-li {
-    margin-top: 10px;
+#link-list li {
+    margin-top: 20px;
     border-bottom: 1px solid #ccc;
-}
-
-a {
-    text-decoration: none;
-    color: #007BFF;
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 400;
-}
-
-a:hover {
-    color: #ff0000;
 }
 
 #back-to-top-container {
     position: absolute;
 }
 
-#back-to-top {
+#back-to-top-button {
     font-family: 'Inter Tight', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     position: fixed;
     bottom: 30px;
@@ -114,14 +115,12 @@ a:hover {
     outline: none;
     justify-content: center;
     align-items: center;
-    color: grey;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #back-to-top a {
     text-decoration: none;
-    color: grey;
 }
 
 #back-to-top:hover {
@@ -148,7 +147,6 @@ a:hover {
     outline: none;
     justify-content: center;
     align-items: center;
-    color: grey;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -172,9 +170,15 @@ a:hover {
     padding: 0;
 }
 
+#nav-menu li {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
 #nav-menu ul li a {
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
     color: grey;
 }
 
