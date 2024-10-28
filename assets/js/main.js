@@ -15,7 +15,7 @@ $(document).ready(function() {
 //nav button open when clicked
 
 function toggleMenu() {
-    var menu = document.getElementById("myNavMenu");
+    var menu = document.getElementById("nav-menu");
     if (menu.style.display === "none" || menu.style.display === "") {
         menu.style.display = "block";
         document.addEventListener("click", closeMenu);
@@ -28,8 +28,8 @@ function toggleMenu() {
 //nav button closed when clicked anything else
 
 function closeMenu(event) {
-    var menu = document.getElementById("myNavMenu");
-    var button = document.getElementById("myNavBtn");
+    var menu = document.getElementById("nav-menu");
+    var button = document.getElementById("nav-button");
     if (!menu.contains(event.target) && !button.contains(event.target)) {
         menu.style.display = "none";
         document.removeEventListener("click", closeMenu);
@@ -46,20 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
         const img = new Image();
-        img.src = 'assets/images/icon.svg'; // Ensure the path is correct
+        img.src = 'assets/images/icon.svg';
 
         img.onload = function() {
             const size = 32;
             canvas.width = size;
             canvas.height = size;
-
             context.clearRect(0, 0, size, size);
             context.save();
             context.translate(size / 2, size / 2);
             context.rotate(angle * Math.PI / 180);
             context.drawImage(img, -size / 2, -size / 2, size, size);
             context.restore();
-
             angle += 6;
             favicon.href = canvas.toDataURL('image/png');
         };

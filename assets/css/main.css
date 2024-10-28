@@ -36,6 +36,12 @@ section {
     z-index: 2;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .top {
     display: inline-block;
     position: absolute;
@@ -47,7 +53,7 @@ section {
     z-index: 2;
 }
 
-.iconbackground img#header-icon {
+.icon-bg img#header-icon {
     display: flex;
     position: fixed;
     top: 100px;
@@ -67,13 +73,7 @@ section {
     }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#linklist ul {
+#link-list ul {
     list-style-type: none;
     padding: 0;
 }
@@ -104,11 +104,11 @@ a:hover {
     display: flex;
     position: fixed;
     bottom: 30px;
-    right: 70px;
+    right: 90px;
     z-index: 99;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 15%;
     border: none;
     outline: none;
@@ -128,11 +128,11 @@ a:hover {
     background-color: lightgrey;
 }
 
-#navContainer {
+#nav-container {
     position: absolute;
 }
 
-#myNavBtn {
+#nav-button {
     font-family: 'Inter Tight', sans-serif;
     font-size: 25px;
     display: flex;
@@ -141,8 +141,8 @@ a:hover {
     right: 30px;
     z-index: 99;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 15%;
     border: none;
     outline: none;
@@ -153,10 +153,10 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#myNavMenu {
+#nav-menu {
     display: none;
     position: fixed;
-    bottom: 60px;
+    bottom: 90px;
     right: 30px;
     width: 200px;
     border-radius: 15px;
@@ -166,22 +166,22 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#myNavMenu ul {
+#nav-menu ul {
     list-style-type: none;
     margin-left: 10px;
     padding: 0;
 }
 
-#myNavMenu ul li a {
+#nav-menu ul li a {
     text-decoration: none;
     font-family: 'Inter Tight', sans-serif;
     color: grey;
 }
 
-#myNavMenu ul li a:hover {
+#nav-manu ul li a:hover {
     background-color: lightgrey;
 }
 
-#myNavBtn:hover {
+#nav-button:hover {
     background-color: lightgrey;
 }
