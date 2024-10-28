@@ -1,4 +1,4 @@
-//smooth scroll on href click
+//smooth scroll on in-page href click
 
 $(document).ready(function () {
   $('a[href^="#"]').on("click", function (event) {
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       context.rotate((angle * Math.PI) / 180);
       context.drawImage(img, -size / 2, -size / 2, size, size);
       context.restore();
-      angle += 6;
+      angle += 2;
       favicon.href = canvas.toDataURL("image/png");
     };
   }

@@ -10,21 +10,18 @@ body {
   text-align: left;
 
   background-color: white;
-  background-image: radial-gradient(
-      at 100% 0%,
-      rgb(100, 150, 255) 0px,
-      transparent 25%
-    ),
+  background-image:
+    radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px,transparent 25%),
     radial-gradient(at 100% 25%, rgb(255, 100, 100) 0px, transparent 25%),
-    radial-gradient(at 100% 50%, rgb(100, 150, 255) 0px, transparent 25%),
-    radial-gradient(at 100% 75%, rgb(255, 255, 100) 0px, transparent 25%),
+    radial-gradient(at 100% 50%, rgb(255, 255, 100) 0px, transparent 25%),
+    radial-gradient(at 100% 75%, rgb(100, 150, 255) 0px, transparent 25%),
     radial-gradient(at 100% 100%, rgb(255, 100, 100) 0px, transparent 25%);
   background-size: 110% 110%;
   background-repeat: repeat;
-  animation: moveGradient 5s linear infinite;
+  animation: move-gradient-bg 5s linear infinite;
 }
 
-@keyframes moveGradient {
+@keyframes move-gradient-bg {
   0% {
     background-position: 0 0;
   }
@@ -79,7 +76,7 @@ section {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
 }
 
 .icon-bg img#header-icon {
@@ -90,10 +87,10 @@ section {
   right: -25px;
   transform: translate(-50%, -50%);
   width: 100px;
-  animation: rotate 20s linear infinite;
+  animation: rotate-icon 20s linear infinite;
 }
 
-@keyframes rotate {
+@keyframes rotate-icon {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -119,6 +116,7 @@ section {
 #back-to-top-button {
   font-family: "Inter Tight", sans-serif;
   font-size: 20px;
+  text-decoration: none;
   display: flex;
   position: fixed;
   bottom: 30px;
@@ -173,7 +171,7 @@ section {
   position: fixed;
   bottom: 90px;
   right: 30px;
-  width: 200px;
+  width: 160px;
   border-radius: 15px;
   border-bottom-right-radius: 0px;
   z-index: 100;
