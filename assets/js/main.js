@@ -1,16 +1,10 @@
 //smooth scroll on in-page href click
 
 $(document).ready(function () {
-  $('a[href^="#"]').on("click", function (event) {
-    var target = $(this.getAttribute("href"));
-    if (target.length) {
-      event.preventDefault();
-      $("html, body").stop().animate(
-        {
-          scrollTop: target.offset().top,
-        },
-        250
-      );
+  $('a[href^="#"]').on("click", function (event)
+  {var target = $(this.getAttribute("href"));
+  if (target.length) {event.preventDefault();
+      $("html, body").stop().animate({scrollTop: target.offset().top,},250);
     }
   });
 });
@@ -71,6 +65,5 @@ document.addEventListener("DOMContentLoaded", function () {
       favicon.href = canvas.toDataURL("image/png");
     };
   }
-
   setInterval(rotateFavicon, 50);
 });
