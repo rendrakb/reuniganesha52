@@ -1,0 +1,31 @@
+Nama,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,250,Orang,25000000
+,,,,
+Nama,Harga,Volume,Satuan,Jumlah
+Konsumsi,72500,250,Orang,18125000
+Sewa Lokasi,4000,250,Orang,1000000
+Dekorasi,9500,250,Orang,2375000
+Perlengkapan,2000,250,Orang,500000
+Keperluan tidak terduga,5000,250,Orang,500000
+Amal,10000,250,Orang,2500000
+Total,,,,25000000
+,,,,
+Nama,Harga,Volume,Satuan,Jumlah
+Konsumsi,72500,250,Orang,18125000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,2375000,1,Set,2375000
+Perlengkapan,500000,1,Set,500000
+Keperluan tidak terduga,500000,1,Set,500000
+Amal,2500000,1,Set,2500000
+,,,,25000000
+,,,,
+source,target,value,,
+Iuran,Pendapatan,5000000,,
+Pendapatan,Konsumsi,1000000,,
+Pendapatan,Sewa Lokasi,2375000,,
+Pendapatan,Dekor,2375000,,
+Pendapatan,Perlengkapan,500000,,
+Pendapatan,Keperluan tidak terduga,500000,,
+Pendapatan,Amal,2500000,,
+Donasi,Amal,2500000,,
+Donasi,Konsumsi,1812500,,
