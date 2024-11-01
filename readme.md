@@ -1,4 +1,3 @@
-# reuniganesha52.github.io
 # Laman untuk Reuni 10 Tahun Ganesha 52. 
 
 Work in progress
