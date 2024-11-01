@@ -1,6 +1,7 @@
+# reuniganesha52.github.io
 # Laman untuk Reuni 10 Tahun Ganesha 52. 
 
-Sekalian untuk belajar web development, jadi mohon maaf kalau ada hal yang tidak pas. Work in progress.
+Work in progress
 
 ## Ide-ide
 
