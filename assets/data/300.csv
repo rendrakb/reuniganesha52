@@ -1,5 +1,6 @@
-Nama,Harga,Volume,Satuan,Jumlah
+Pendapatan,Harga,Volume,Satuan,Jumlah
 Iuran Pendaftaran,100000,300,Orang,30000000
+Total,-,-,-,30000000
 ,,,,
 Nama,Harga,Volume,Satuan,Jumlah
 Konsumsi,75000,300,Orang,22500000
@@ -10,14 +11,14 @@ Keperluan tidak terduga,5000,300,Orang,500000
 Amal,10000,300,Orang,3000000
 Total,,,,30000000
 ,,,,
-Nama,Harga,Volume,Satuan,Jumlah
+Pengeluaran,Harga,Volume,Satuan,Jumlah
 Konsumsi,75000,300,Orang,22500000
 Sewa Lokasi,1000000,1,Set,1000000
 Dekor,2500000,1,Set,2500000
 Perlengkapan,500000,1,Set,500000
-Keperluan tidak terduga,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
 Amal,3000000,1,Set,3000000
-,,,,30000000
+Total,-,-,-,30000000
 ,,,,
 source,target,value,,
 Iuran,Pendapatan,5000000,,

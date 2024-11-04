@@ -1,10 +1,11 @@
 //smooth scroll on in-page href click
 
 $(document).ready(function () {
-  $('a[href^="#"]').on("click", function (event)
-  {var target = $(this.getAttribute("href"));
-  if (target.length) {event.preventDefault();
-      $("html, body").stop().animate({scrollTop: target.offset().top,},250);
+  $('a[href^="#"]').on("click", function (event) {
+    var target = $(this.getAttribute("href"));
+    if (target.length) {
+      event.preventDefault();
+      $("html, body").stop().animate({ scrollTop: target.offset().top }, 250);
     }
   });
 });
@@ -66,4 +67,27 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
   setInterval(rotateFavicon, 50);
+});
+
+//table slider
+
+document.addEventListener("DOMContentLoaded", function () {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
+
+  document.getElementById("next").addEventListener("click", function () {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides[currentSlide].classList.add("active");
+  });
+
+  document.getElementById("prev").addEventListener("click", function () {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add("active");
+  });
+
+  //show the first slide initially
+  slides[currentSlide].classList.add("active");
 });
