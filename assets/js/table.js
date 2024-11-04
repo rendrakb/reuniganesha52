@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         rows.forEach((row) => {
           if (row.trim() === ",,,,") {
             tableCount++;
-            displayTable = tableCount === 1 || tableCount === 3;
+            displayTable = tableCount === 1 || tableCount === 2;
             if (displayTable && currentTable.length > 0) {
               tableHTML += generateTableHTML(currentTable);
             }
