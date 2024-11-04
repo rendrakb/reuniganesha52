@@ -1,0 +1,11 @@
+[
+    { "source": "Iuran", "target": "Pendapatan", "amount": 25000000 },
+    { "source": "Pendapatan", "target": "Konsumsi", "amount": 18125000 },
+    { "source": "Pendapatan", "target": "Sewa Lokasi", "amount": 1000000 },
+    { "source": "Pendapatan", "target": "Dekor", "amount": 2375000 },
+    { "source": "Pendapatan", "target": "Perlengkapan", "amount": 500000 },
+    { "source": "Pendapatan", "target": "Keperluan tidak terduga", "amount": 500000 },
+    { "source": "Pendapatan", "target": "Amal", "amount": 2500000 },
+    { "source": "Donasi", "target": "Amal", "amount": 1812500 },
+    { "source": "Donasi", "target": "Konsumsi", "amount": 1812500 }
+]

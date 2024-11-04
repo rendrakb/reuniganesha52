@@ -122,6 +122,10 @@ table td {
   font-weight: 700;
 }
 
+#sankey-chart {
+  width: 100%;
+}
+
 .header {
   z-index: 2;
   font-size: 25px !important;

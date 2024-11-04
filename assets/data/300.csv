@@ -2,15 +2,6 @@ Pendapatan,Harga,Volume,Satuan,Jumlah
 Iuran Pendaftaran,100000,300,Orang,30000000
 Total,-,-,-,30000000
 ,,,,
-Nama,Harga,Volume,Satuan,Jumlah
-Konsumsi,75000,300,Orang,22500000
-Sewa Lokasi,3333.3333333333335,300,Orang,1000000
-Dekorasi,8333.333333333334,300,Orang,2500000
-Perlengkapan,1666.6666666666667,300,Orang,500000
-Keperluan tidak terduga,5000,300,Orang,500000
-Amal,10000,300,Orang,3000000
-Total,,,,30000000
-,,,,
 Pengeluaran,Harga,Volume,Satuan,Jumlah
 Konsumsi,75000,300,Orang,22500000
 Sewa Lokasi,1000000,1,Set,1000000
@@ -20,13 +11,3 @@ Keperluan tak terduga,500000,1,Set,500000
 Amal,3000000,1,Set,3000000
 Total,-,-,-,30000000
 ,,,,
-source,target,value,,
-Iuran,Pendapatan,5000000,,
-Pendapatan,Konsumsi,1000000,,
-Pendapatan,Sewa Lokasi,2500000,,
-Pendapatan,Dekor,2500000,,
-Pendapatan,Perlengkapan,500000,,
-Pendapatan,Keperluan tidak terduga,500000,,
-Pendapatan,Amal,3000000,,
-Donasi,Amal,3000000,,
-Donasi,Konsumsi,2250000,,

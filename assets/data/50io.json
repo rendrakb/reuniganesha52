@@ -1,0 +1,10 @@
+[
+    {"source": "Iuran", "target": "Pendapatan", "value": 5000000},
+    {"source": "Pendapatan", "target": "Konsumsi", "value": 2500000},
+    {"source": "Pendapatan", "target": "Sewa Lokasi", "value": 1000000},
+    {"source": "Pendapatan", "target": "Perlengkapan", "value": 500000},
+    {"source": "Pendapatan", "target": "Keperluan tidak terduga", "value": 500000},
+    {"source": "Pendapatan", "target": "Amal", "value": 500000},
+    {"source": "Donasi", "target": "Amal", "value": 500000},
+    {"source": "Donasi", "target": "Konsumsi", "value": 250000}
+]
