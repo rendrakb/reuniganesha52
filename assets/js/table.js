@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             if (displayTable && currentTable.length > 0) {
               tableHTML += generateTableHTML(currentTable);
             }
-            
+            tableHTML += '<tr><td colspan="5" style="height: 5px; border: none;"></td></tr>';
+
             //add spacing between tables
-            tableHTML += '<tr><td colspan="5" style="height: 10px;"></td></tr>';
+
             currentTable = [];
           } else {
             currentTable.push(row.split(","));
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         //check last table, in case it doesn't end with ",,,,"
+
         if (currentTable.length > 0) {
           tableCount++;
           if (tableCount === 1 || tableCount === 3) {
@@ -45,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(table.id).innerHTML = tableHTML;
       })
       .then(() => {
-        
         //initialize the slider after tables are generated
+
         initializeSlider();
       });
   });
@@ -56,14 +58,19 @@ document.addEventListener("DOMContentLoaded", function () {
     data.forEach((cells, rowIndex) => {
       table += "<tr>";
       cells.forEach((cell, cellIndex) => {
+        //apply thousand separator to harga and jumlah columns and align to the right
+
         const formattedCell =
-          cellIndex > 1 && !isNaN(cell)
-            ? Number(cell).toLocaleString("id-ID")
-            : cell.trim();
+          (cellIndex === 1 || cellIndex === 2 || cellIndex === 4) &&
+          !isNaN(cell)
+            ? `<td style="text-align: right;">${Number(cell).toLocaleString(
+                "id-ID"
+              )}</td>`
+            : `<td>${cell.trim()}</td>`;
         if (rowIndex === 0) {
-          table += `<th style="font-weight: bold;">${formattedCell}</th>`;
+          table += `<th style="font-weight: bold; text-align: center; padding-bottom: 10px;">${cell.trim()}</th>`;
         } else {
-          table += `<td>${formattedCell}</td>`;
+          table += formattedCell;
         }
       });
       table += "</tr>";
@@ -90,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //show the first slide initially
+
     slides[currentSlide].classList.add("active");
   }
 });

@@ -74,11 +74,28 @@ section {
   text-align: left;
   font-size: 12px;
   font-weight: 700;
+  margin-bottom: 20px;
+}
+
+table {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 85vw;
+  vertical-align: bottom;
+}
+
+table td {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 5px;
+  padding-top:5px;
 }
 
 .slider-button {
   position: relative;
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Consolas", sans-serif;
   font-size: 14px;
   width: 30px;
   height: 30px;
@@ -103,13 +120,6 @@ section {
   text-align: center;
   font-size: 12px;
   font-weight: 700;
-}
-
-table {
-  font-size: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  vertical-align: bottom;
 }
 
 .header {

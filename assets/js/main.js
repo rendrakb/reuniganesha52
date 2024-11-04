@@ -89,5 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //show the first slide initially
+
   slides[currentSlide].classList.add("active");
 });
