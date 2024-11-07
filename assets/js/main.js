@@ -1,5 +1,4 @@
-//smooth scroll on in-page href click
-
+//smoothscroll on internal href click
 $(document).ready(function () {
   $('a[href^="#"]').on("click", function (event) {
     var target = $(this.getAttribute("href"));
@@ -11,13 +10,11 @@ $(document).ready(function () {
 });
 
 //back to top button
-
 function backTop() {
   $("html, body").animate({ scrollTop: 0 }, 250);
 }
 
-//nav button open when clicked
-
+//navigation menu toggling
 function toggleMenu() {
   var menu = document.getElementById("nav-menu");
   if (menu.style.display === "none" || menu.style.display === "") {
@@ -29,8 +26,6 @@ function toggleMenu() {
   }
 }
 
-//nav button closed when clicked anything else
-
 function closeMenu(event) {
   var menu = document.getElementById("nav-menu");
   var button = document.getElementById("nav-button");
@@ -41,7 +36,6 @@ function closeMenu(event) {
 }
 
 //favicon rotation animation
-
 document.addEventListener("DOMContentLoaded", function () {
   const favicon = document.getElementById("favicon");
   let angle = 0;
@@ -69,9 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(rotateFavicon, 50);
 });
 
-//table slider
-
-document.addEventListener("DOMContentLoaded", function () {
+//slider initialization
+function initializeSlider() {
   let currentSlide = 0;
   const slides = document.querySelectorAll(".slide");
   const totalSlides = slides.length;
@@ -89,6 +82,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //show the first slide initially
-
   slides[currentSlide].classList.add("active");
+}
+
+//ensure the DOM is fully loaded before initializing sliders
+document.addEventListener("DOMContentLoaded", function () {
+  if (typeof initializeSlider === "function") {
+    initializeSlider();
+  }
 });

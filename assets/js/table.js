@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
             tableHTML += '<tr><td colspan="5" style="height: 5px; border: none;"></td></tr>';
 
             //add spacing between tables
-
             currentTable = [];
           } else {
             currentTable.push(row.split(","));
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         //check last table, in case it doesn't end with ",,,,"
-
         if (currentTable.length > 0) {
           tableCount++;
           if (tableCount === 1 || tableCount === 3) {
@@ -47,9 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(table.id).innerHTML = tableHTML;
       })
       .then(() => {
-        //initialize the slider after tables are generated
 
-        initializeSlider();
+        //call the slider initialization function from main.js
+        if (typeof initializeSlider === "function") {
+          initializeSlider();
+        }
       });
   });
 
@@ -58,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
     data.forEach((cells, rowIndex) => {
       table += "<tr>";
       cells.forEach((cell, cellIndex) => {
+        
         //apply thousand separator to harga and jumlah columns and align to the right
-
         const formattedCell =
           (cellIndex === 1 || cellIndex === 2 || cellIndex === 4) &&
           !isNaN(cell)
@@ -77,27 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     table += "</tbody></table>";
     return table;
-  }
-
-  function initializeSlider() {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll(".slide");
-    const totalSlides = slides.length;
-
-    document.getElementById("next").addEventListener("click", function () {
-      slides[currentSlide].classList.remove("active");
-      currentSlide = (currentSlide + 1) % totalSlides;
-      slides[currentSlide].classList.add("active");
-    });
-
-    document.getElementById("prev").addEventListener("click", function () {
-      slides[currentSlide].classList.remove("active");
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      slides[currentSlide].classList.add("active");
-    });
-
-    //show the first slide initially
-
-    slides[currentSlide].classList.add("active");
   }
 });
