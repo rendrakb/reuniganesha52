@@ -1,0 +1,77 @@
+Pendapatan 50,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,50,Orang,5000000
+Total,-,-,-,5000000
+,,,,
+Pengeluaran 50,Harga,Volume,Satuan,Jumlah
+Konsumsi,50000,50,Orang,2500000
+Sewa Lokasi,1000000,1,Set,1000000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,500000,1,Set,500000
+Total,-,-,-,5000000
+,,,,
+Pendapatan 100,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,100,Orang,10000000
+Total,-,-,-,10000000
+,,,,
+Pengeluaran 100,Harga,Volume,Satuan,Jumlah
+Konsumsi,60000,100,Orang,6000000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,1000000,1,Set,1000000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,1000000,1,Set,1000000
+Total,-,-,-,10000000
+,,,,
+Pendapatan 150,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,150,Orang,15000000
+Total,-,-,-,15000000
+,,,,
+Pengeluaran 150,Harga,Volume,Satuan,Jumlah
+Konsumsi,65000,150,Orang,9750000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,1750000,1,Set,1750000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,1500000,1,Set,1500000
+Total,-,-,-,15000000
+,,,,
+Pendapatan 200,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,200,Orang,20000000
+Total,-,-,-,20000000
+,,,,
+Pengeluaran 200,Harga,Volume,Satuan,Jumlah
+Konsumsi,70000,200,Orang,14000000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,2000000,1,Set,2000000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,2000000,1,Set,2000000
+Total,-,-,-,20000000
+,,,,
+Pendapatan 250,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,250,Orang,25000000
+Total,-,-,-,25000000
+,,,,
+Pengeluaran 250,Harga,Volume,Satuan,Jumlah
+Konsumsi,72500,250,Orang,18125000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,2375000,1,Set,2375000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,2500000,1,Set,2500000
+Total,-,-,-,25000000
+,,,,
+Pendapatan 300,Harga,Volume,Satuan,Jumlah
+Iuran Pendaftaran,100000,300,Orang,30000000
+Total,-,-,-,30000000
+,,,,
+Pengeluaran 300,Harga,Volume,Satuan,Jumlah
+Konsumsi,75000,300,Orang,22500000
+Sewa Lokasi,1000000,1,Set,1000000
+Dekor,2500000,1,Set,2500000
+Perlengkapan,500000,1,Set,500000
+Keperluan tak terduga,500000,1,Set,500000
+Amal,3000000,1,Set,3000000
+Total,-,-,-,30000000
+,,,,

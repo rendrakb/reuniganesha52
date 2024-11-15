@@ -64,6 +64,7 @@ section {
   position: relative;
   top: 0;
   left: 0;
+  justify-items: center;
 }
 
 .slide.active {

@@ -1,4 +1,4 @@
-//smoothscroll on internal href click
+// Smoothscroll on internal href click
 $(document).ready(function () {
   $('a[href^="#"]').on("click", function (event) {
     var target = $(this.getAttribute("href"));
@@ -9,12 +9,12 @@ $(document).ready(function () {
   });
 });
 
-//back to top button
+// Back to top button
 function backTop() {
   $("html, body").animate({ scrollTop: 0 }, 250);
 }
 
-//navigation menu toggling
+// Navigation menu toggling
 function toggleMenu() {
   var menu = document.getElementById("nav-menu");
   if (menu.style.display === "none" || menu.style.display === "") {
@@ -35,7 +35,7 @@ function closeMenu(event) {
   }
 }
 
-//favicon rotation animation
+// Favicon rotation animation
 document.addEventListener("DOMContentLoaded", function () {
   const favicon = document.getElementById("favicon");
   let angle = 0;
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(rotateFavicon, 50);
 });
 
-//slider initialization
+// Slider initialization
 function initializeSlider() {
   let currentSlide = 0;
   const slides = document.querySelectorAll(".slide");
@@ -81,11 +81,11 @@ function initializeSlider() {
     slides[currentSlide].classList.add("active");
   });
 
-  //show the first slide initially
+  // Show the first slide initially
   slides[currentSlide].classList.add("active");
 }
 
-//ensure the DOM is fully loaded before initializing sliders
+// Ensure the DOM is fully loaded before initializing sliders
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof initializeSlider === "function") {
     initializeSlider();

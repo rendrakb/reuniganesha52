@@ -1,0 +1,397 @@
+{
+  "Pendapatan 50": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 50,
+      "Satuan": "Orang",
+      "Jumlah": 5000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 5000000
+    }
+  ],
+  "Pengeluaran 50": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 50000,
+      "Volume": 50,
+      "Satuan": "Orang",
+      "Jumlah": 2500000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 5000000
+    }
+  ],
+  "Pendapatan 100": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 100,
+      "Satuan": "Orang",
+      "Jumlah": 10000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 10000000
+    }
+  ],
+  "Pengeluaran 100": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 60000,
+      "Volume": 100,
+      "Satuan": "Orang",
+      "Jumlah": 6000000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Dekor",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 10000000
+    }
+  ],
+  "Pendapatan 150": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 150,
+      "Satuan": "Orang",
+      "Jumlah": 15000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 15000000
+    }
+  ],
+  "Pengeluaran 150": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 65000,
+      "Volume": 150,
+      "Satuan": "Orang",
+      "Jumlah": 9750000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Dekor",
+      "Harga": 1750000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1750000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 1500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1500000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 15000000
+    }
+  ],
+  "Pendapatan 200": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 200,
+      "Satuan": "Orang",
+      "Jumlah": 20000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 20000000
+    }
+  ],
+  "Pengeluaran 200": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 70000,
+      "Volume": 200,
+      "Satuan": "Orang",
+      "Jumlah": 14000000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Dekor",
+      "Harga": 2000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2000000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 2000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 20000000
+    }
+  ],
+  "Pendapatan 250": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 250,
+      "Satuan": "Orang",
+      "Jumlah": 25000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 25000000
+    }
+  ],
+  "Pengeluaran 250": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 72500,
+      "Volume": 250,
+      "Satuan": "Orang",
+      "Jumlah": 18125000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Dekor",
+      "Harga": 2375000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2375000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 2500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2500000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 25000000
+    }
+  ],
+  "Pendapatan 300": [
+    {
+      "Item": "Iuran Pendaftaran",
+      "Harga": 100000,
+      "Volume": 300,
+      "Satuan": "Orang",
+      "Jumlah": 30000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 30000000
+    }
+  ],
+  "Pengeluaran 300": [
+    {
+      "Item": "Konsumsi",
+      "Harga": 75000,
+      "Volume": 300,
+      "Satuan": "Orang",
+      "Jumlah": 22500000
+    },
+    {
+      "Item": "Sewa Lokasi",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Dekor",
+      "Harga": 2500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2500000
+    },
+    {
+      "Item": "Perlengkapan",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Keperluan tak terduga",
+      "Harga": 500000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 500000
+    },
+    {
+      "Item": "Amal",
+      "Harga": 3000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 3000000
+    },
+    {
+      "Item": "Total",
+      "Harga": null,
+      "Volume": null,
+      "Satuan": null,
+      "Jumlah": 30000000
+    }
+  ]
+}
