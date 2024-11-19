@@ -3,11 +3,11 @@ body {
   font-weight: 200;
   display: flex;
   justify-content: center;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: left;
   align-items: flex-start;
-
+  margin: 0px;
   background-color: white;
   background-image:
     radial-gradient(at 100% 0%, rgb(100, 150, 255) 0px, transparent 25%),
@@ -76,6 +76,13 @@ section {
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.chart {
+  font-weight: 700;
+  font-size: 9px;
+  fill: white;
+  opacity: 75%;
 }
 
 .table-title {

@@ -81,8 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
           .attr("y", y(iuranData.Jumlah) + (height - y(iuranData.Jumlah)) / 2)
           .attr("text-anchor", "middle")
           .attr("dy", ".35em")
-          .style("fill", "white")
-          .style("font-size", "9px")
           .text(`Iuran: ${iuranData.Jumlah.toLocaleString()}`);
 
         // stacked bars
@@ -105,8 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
           .attr("y", d => y(d.y0) + (y(d.y1) - y(d.y0)) / 2)
           .attr("text-anchor", "middle") 
           .attr("dy", ".35em")
-          .style("fill", "white")
-          .style("font-size", "9px")
           .text(d => `${d.Item}: ${d.Jumlah.toLocaleString()} (${d.percentage}%)`);
       });
     });
