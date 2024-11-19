@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const itemColors = {
         "Iuran Pendaftaran": "#1f77b4",
-        "Konsumsi": "#ff7f0e",
-        "Sewa Lokasi": "#2ca02c",
-        "Dekor": "#d62728",
-        "Perlengkapan": "#9467bd",
-        "Keperluan tak terduga": "#8c564b",
-        "Amal": "#e377c2"
+        "Konsumsi": "#D00000",
+        "Sewa Lokasi": "#DC2F02",
+        "Dekor": "#E85D04",
+        "Perlengkapan": "#F48C06",
+        "Keperluan tak terduga": "#FAA307",
+        "Amal": "#FFBA08"
       };
 
       charts.forEach(chart => {
