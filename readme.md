@@ -6,15 +6,14 @@ Work in progress
 
 ### A. Diagram Rencana Finansial 
 
-Untuk Rencana Finansial, selain menggunakan tabel konvensional, juga akan ditampilkan dalam diagram Sankey menggunakan d3.js agar memudahkan pembaca. 
+Untuk Rencana Finansial, selain menggunakan tabel konvensional, juga akan ditampilkan dalam diagram menggunakan d3.js agar memudahkan pembacaan. 
 
 #### Alur 
 
-1. Buat data .xls rencana finansial konvensional untuk 4 skenario jumlah pendaftar.
-2. Restruktur input & output.
-3. Ekspor menjadi .json untuk masing-masing skenario.
-4. Proses menggunakan d3.js.
-5. Tampilkan di .html menggunakan slide untuk masing masing skenario, beserta tabel konvensional rencana finansial.
+1. Buat data .xls rencana finansial konvensional untuk masing masing skenario jumlah pendaftar.
+2. Ekspor menjadi .csv dan konversi ke .json.
+3. Proses menggunakan d3.js.
+4. Tampilkan di .html menggunakan slide untuk masing masing skenario, beserta tabel konvensional rencana finansial.
 
 ### B. Embed Google Forms 
 

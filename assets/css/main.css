@@ -71,6 +71,13 @@ section {
   display: block;
 }
 
+.chart-title {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .table-title {
   text-align: left;
   font-size: 12px;

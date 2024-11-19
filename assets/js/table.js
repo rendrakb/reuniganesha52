@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(table.id).innerHTML = tableHTMLPendapatan + tableHTMLPengeluaran;
       });
 
-      // Call the slider initialization function from main.js
+      // calling slider from main.js
       if (typeof initializeSlider === "function") {
         initializeSlider();
       }
@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
   function generateTableHTML(data) {
     let table = "<table><tbody>";
 
-    // Generate headers based on keys in the first data object
+    // generate headers
     table += "<tr>";
     Object.keys(data[0]).forEach(key => {
       table += `<th style="font-weight: bold; text-align: center; padding-bottom: 10px;">${key}</th>`;
     });
     table += "</tr>";
 
-    // Generate rows
+    // generate rows
     data.forEach(item => {
       table += "<tr>";
       Object.values(item).forEach(value => {
