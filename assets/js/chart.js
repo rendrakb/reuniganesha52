@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const pendapatan = data[chart.pendapatanKey].filter(item => item.Item !== "Total");
         const pengeluaran = data[chart.pengeluaranKey].filter(item => item.Item !== "Total");
 
-        // Separate Iuran and other items
+        // separate iuran & other items
         const iuranData = pendapatan.find(item => item.Item === "Iuran Pendaftaran");
         const totalPengeluaran = pengeluaran.reduce((sum, item) => sum + item.Jumlah, 0);
         const stackedData = pengeluaran.map((item, index) => {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             y0: previous,
             y1: previous + item.Jumlah,
             color: itemColors[item.Item],
-            percentage: (item.Jumlah / totalPengeluaran * 100).toFixed(2) // Calculate percentage
+            percentage: (item.Jumlah / totalPengeluaran * 100).toFixed(2) // calculate percentage
           };
         });
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const g = svg.append("g")
                      .attr("transform", `translate(${margin.left},${margin.top})`);
 
-        // Draw Iuran bar
+        // iuran bar
         g.append("rect")
           .attr("class", "bar")
           .attr("x", x('Income'))
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .attr("height", height - y(iuranData.Jumlah))
           .attr("fill", itemColors["Iuran Pendaftaran"]);
 
-        // Draw Iuran label
+        // iuran label
         g.append("text")
           .attr("class", "label")
           .attr("x", x('Income') + x.bandwidth() / 2)
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .style("font-size", "9px")
           .text(`Iuran: ${iuranData.Jumlah.toLocaleString()}`);
 
-        // Draw stacked bars
+        // stacked bars
         const stackedBars = g.selectAll(".stacked-bar")
           .data(stackedData)
           .enter().append("rect")
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .attr("height", d => y(d.y0) - y(d.y1))
           .attr("fill", d => d.color);
 
-        // Draw labels for stacked bars
+        // stacked bars label
         g.selectAll(".stacked-label")
           .data(stackedData)
           .enter().append("text")
