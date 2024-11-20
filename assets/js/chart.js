@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to check if container is ready
+  // check if the container is ready
   function isContainerReady(containerId) {
     const container = document.getElementById(containerId);
     const isReady = container && container.getBoundingClientRect().width > 0;
@@ -7,16 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
 
-  // Function to create single chart
+  // create single chart
   function createChart(data, chart) {
-    // Wait until container is ready
+    // wait until container ready
     if (!isContainerReady(chart.id)) {
       requestAnimationFrame(() => createChart(data, chart));
       return;
     }
 
     const container = document.getElementById(chart.id);
-    container.innerHTML = ''; // Clear existing content
+    container.innerHTML = ''; // clear existing content
     const containerWidth = container.getBoundingClientRect().width;
 
     const itemColors = {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   .append("svg")
                   .attr("width", containerWidth)
                   .attr("height", 500)
-                  .attr("preserveAspectRatio", "xMidYMid meet"); // Add this for better scaling
+                  .attr("preserveAspectRatio", "xMidYMid meet"); // better scaling
 
     const margin = { top: 0, right: 0, bottom: 0, left: 0 };
     const width = containerWidth - margin.left - margin.right;
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .text(d => `${d.Item}: ${d.Jumlah.toLocaleString()} (${d.percentage}%)`);
   }
 
-  // Main execution
+  // main execution
   let chartsData = null;
   fetch('assets/data/finansial.json')
     .then(response => response.json())
@@ -130,10 +130,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       charts.forEach(chart => createChart(data, chart));
 
-      // Handle window resize
+      // window resizing handling
       let resizeTimeout;
       window.addEventListener('resize', () => {
-        // Debounce resize events
+        // debounce resize events
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(() => {
           charts.forEach(chart => createChart(data, chart));
