@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const isReady = container && container.getBoundingClientRect().width > 0;
     return isReady;
   }
-  
 
   // create single chart
   function createChart(data, chart) {
