@@ -17,7 +17,7 @@ body {
     radial-gradient(at 100% 100%, rgb(255, 100, 100) 0px, transparent 25%);
   background-size: 110% 110%;
   background-repeat: repeat;
-  animation: move-gradient-bg 5s linear infinite;
+  animation: move-gradient-bg 2.5s linear infinite;
 }
 
 @keyframes move-gradient-bg {
