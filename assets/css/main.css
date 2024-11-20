@@ -83,6 +83,7 @@ section {
   font-size: 9px;
   fill: white;
   opacity: 75%;
+  width: 100%;
 }
 
 .table-title {
