@@ -166,7 +166,7 @@ table td {
   right: -25px;
   transform: translate(-50%, -50%);
   width: 100px;
-  animation: rotate-icon 20s linear infinite;
+  animation: rotate-icon 10s ease infinite;
 }
 
 @keyframes rotate-icon {
