@@ -30,9 +30,9 @@ Ternyata Google form tidak memperbolehkan embed form yang memiliki fitur upload 
 1. Siapkan Google Sheet dan Folder di Google Drive:
     - Buat Google Sheet untuk data.
     - Buat folder di Google Drive untuk file.
-2. Membuat Formulir dengan HTML dan JavaScript:
-    - Buat formulir HTML untuk input nama dan file.
-    - Gunakan JavaScript untuk mengirim data ke Google Apps Script.
+2. Membuat Formulir dengan .html dan .js:
+    - Buat formulir di .html untuk input data form dan file.
+    - Gunakan .js untuk mengirim data ke Google Apps Script.
 3. Google Apps Script sebagai penerima data:
     - Buat skrip untuk menerima data dari form & deploy sebagai Google Web App.
     - Skrip akan menyimpan data teks ke Google Sheet dan file ke folder Google Drive.
