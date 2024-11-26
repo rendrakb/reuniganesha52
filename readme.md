@@ -1,6 +1,6 @@
 # Laman untuk Reuni 10 Tahun Ganesha 52. 
 
-Work in progress
+Work in progress. Laman ini dibuat sebagai platform pembantu acara Reuni 10 Tahun Ganesha 52 sekaligus untuk kesempatan belajar web-developing. Laman ini didesain sedemikian sehingga tidak memerlukan biaya sepeserpun untuk bekerja, baik secara statis maupun dinamis.
 
 ## Ide-ide
 
