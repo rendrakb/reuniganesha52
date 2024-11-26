@@ -27,7 +27,6 @@
                         <li><a href="#rencana-finansial">Rencana Finansial</a></li>
                         <li><a href="#daftar">Daftar</a></li>
                         <li><a href="#pendaftar">Pendaftar</a></li>
-                        <li><a href="#pertanyaan-umum">Pertanyaan Umum</a></li>
                         <li><a href="#saran-pertanyaan">Saran & Pertanyaan</a></li>
                         <li><a href="#info-perubahan">Info & Perubahan</a></li>
                         <li><a href="#tentang">Tentang</a></li>
@@ -107,31 +106,76 @@
         <section id="daftar">
             <div class="section-container">
                 <h2>Daftar</h2>
-                <p>Content for Daftar section.</p>
+                <h3>Formulir Pendaftaran</h3>
+                <div id="form-container">
+                    <form action="/submit_form" method="post" enctype="multipart/form-data">
+                        <label for="nama">Nama*:</label>
+                        <textarea id="nama" name="nama" rows="4" cols="50" required></textarea><br><br>
+                        
+                        <label for="kelas">Kelas*:</label>
+                        <select id="kelas" name="kelas" required>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                            <option value="A3">A3</option>
+                            <option value="A4">A4</option>
+                            <option value="A5">A5</option>
+                            <option value="A6">A6</option>
+                            <option value="A7">A7</option>
+                            <option value="A8">A8</option>
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                        </select><br><br>
+                        
+                        <label for="orang">Orang yang Didaftarkan*:</label>
+                        <select id="orang" name="orang" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4 atau lebih">4 atau lebih</option>
+                        </select><br><br>
+                        
+                        <label for="bukti-pembayaran">Unggah Bukti Pembayaran*:</label>
+                        <input type="file" id="bukti-pembayaran" name="bukti-pembayaran" required><br><br>
+                        
+                        <label for="preferensi-waktu">Preferensi Waktu & Format Acara*:</label>
+                        <select id="preferensi-waktu" name="preferensi" required>
+                            <option value="sebelum lebaran">Sebelum Lebaran - Buka Puasa Bersama</option>
+                            <option value="setelah lebaran">Setelah Lebaran - Halal Bi Halal</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select><br><br>
+                        
+                        <label for="saran">Saran & Pertanyaan:</label>
+                        <textarea id="saran" name="saran" rows="4" cols="50"></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </section>
         <section id="pendaftar">
             <div class="section-container">
                 <h2>Pendaftar</h2>
-                <p>Content for Pendaftar section.</p>
-            </div>
-        </section>
-        <section id="pertanyaan-umum">
-            <div class="section-container">
-                <h2>Pertanyaan Umum</h2>
-                <p>Content for Pertanyaan Umum section.</p>
+                <div id="excel-container">
+                    <iframe id="embed-excel" src=placeholder></iframe>
+                </div>
             </div>
         </section>
         <section id="saran-pertanyaan">
             <div class="section-container">
                 <h2>Saran & Pertanyaan</h2>
-                <p>Content for Saran & Pertanyaan section.</p>
+                <p>Kumpulan saran & pertanyaan umum yang dihimpun melalui formulir pendaftaran & media lainnya.</p>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet</p>
             </div>
         </section>
         <section id="info-perubahan">
             <div class="section-container">
                 <h2>Info & Perubahan</h2>
-                <p>Content for Info & Perubahan section.</p>
+                <p>Semua info terbaru & perubahan di tampilkan di bagian ini, diurutkan berdasarkan waktu.</p>
+                <h3>00/00/00</h3>
+                <p>Laman dirilis.</p>
             </div>
         </section>
         <section id="tentang">
@@ -141,6 +185,7 @@
                 <p>Untuk kontak lebih lanjut dapat menghubungi <a class="gradient-text">rendrakb@gmail.com</a>.</p>
             </div>
         </section>
+        <div id="footer">2024 Rendra KB</div>
     </section>
     <div id="back-to-top-container">
         <button onclick="backTop()" id="back-to-top-button" title="back-to-top"><a class="gradient-text">↑</a></button>
@@ -154,7 +199,6 @@
                 <li><a href="#rencana-finansial">Rencana Finansial</a></li>
                 <li><a href="#daftar">Daftar</a></li>
                 <li><a href="#pendaftar">Pendaftar</a></li>
-                <li><a href="#pertanyaan-umum">Pertanyaan Umum</a></li>
                 <li><a href="#saran-pertanyaan">Saran & Pertanyaan</a></li>
                 <li><a href="#info-perubahan">Info & Perubahan</a></li>
                 <li><a href="#tentang">Tentang</a></li>
