@@ -37,7 +37,7 @@ Ternyata Google form tidak memperbolehkan embed form yang memiliki fitur upload 
     - Buat skrip untuk menerima data dari form & deploy sebagai Google Web App.
     - Skrip akan menyimpan data teks ke Google Sheet dan file ke folder Google Drive.
 
-#### Potensi Masalah 1
+#### Potensi Masalah 2
 
 Google web app script perlu verifikasi agar tidak ada prompt unverified app (serem secara privasi & keamanan bagi pengguna, source code yang berjalan di web app ga bisa dishare secara langsung), menimbang profil pengguna & pengelola yg gamau ribet jadi mending google form aja, tanpa perlu di embed. Nanti ketika sudah selesai akan di-merge kembali. 
 
