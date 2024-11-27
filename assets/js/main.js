@@ -14,6 +14,12 @@ function backTop() {
   $("html, body").animate({ scrollTop: 0 }, 250);
 }
 
+// floating daftar button
+$("#gform-button-floating").on("click", function (event) {
+  event.preventDefault();
+  $("html, body").animate({ scrollTop: $("#daftar").offset().top }, 250);
+});
+
 // navmenu toggle
 function toggleMenu() {
   var menu = document.getElementById("nav-menu");
