@@ -90,11 +90,11 @@ section {
   display: block;
 }
 
-/* SLIDER BUTTON */
+/* SLIDER BUTTONS */
 
 .slider-button {
   position: relative;
-  font-family: "Consolas", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
   width: 30px;
   height: 30px;
@@ -381,7 +381,7 @@ input[type="submit"]:hover {
   width: 100%;
 } */
 
-/* GOOGLE FORM */
+/* FORM */
 
 #gform-button {
   width: 100%;
@@ -405,7 +405,7 @@ input[type="submit"]:hover {
 }
 
 #gform-button-floating {
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 30px;
   text-align: center;
   display: flex;
