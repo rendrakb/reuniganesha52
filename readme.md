@@ -21,7 +21,7 @@ Sistem pendaftaran pada acara menggunakan Google Forms yang di-embed pada laman,
 
 Penggunaan Google Forms juga memungkinkan pada bagian Kritik, Saran & Pertanyaan.
 
-#### Potensi Masalah
+#### Potensi Masalah 1
 
 Ternyata Google form tidak memperbolehkan embed form yang memiliki fitur upload file di dalamnya, jadi kemungkinan harus membuat secara manual dengan bantuan serverless computing Google Apps Script sebagai pengganti server. Dengan demikian, privasi & keamanan data tetap terjamin
 
@@ -36,6 +36,11 @@ Ternyata Google form tidak memperbolehkan embed form yang memiliki fitur upload 
 3. Google Apps Script sebagai penerima data:
     - Buat skrip untuk menerima data dari form & deploy sebagai Google Web App.
     - Skrip akan menyimpan data teks ke Google Sheet dan file ke folder Google Drive.
+
+#### Potensi Masalah 1
+
+Google web app script perlu verifikasi agar tidak ada prompt unverified app (serem secara privasi & keamanan bagi pengguna, source code yang berjalan di web app ga bisa dishare secara langsung), menimbang profil pengguna & pengelola yg gamau ribet jadi mending google form aja, tanpa perlu di embed.
+
 
 ### C. Embed Sheet Data Pendaftar - Ongoing
 
