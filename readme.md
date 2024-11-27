@@ -39,7 +39,7 @@ Ternyata Google form tidak memperbolehkan embed form yang memiliki fitur upload 
 
 #### Potensi Masalah 2
 
-Google web app script perlu verifikasi agar tidak ada prompt unverified app (serem secara privasi & keamanan bagi pengguna, source code yang berjalan di web app ga bisa dishare secara langsung), menimbang profil pengguna & pengelola yg gamau ribet jadi mending google form aja, tanpa perlu di embed. Nanti ketika sudah selesai akan di-merge kembali.
+Google web app script perlu verifikasi agar tidak ada prompt unverified app (serem secara privasi & keamanan bagi pengguna, source code yang berjalan di web app ga bisa dishare secara langsung), menimbang profil pengguna & pengelola yg gamau ribet jadi mending google form aja, tanpa perlu di embed. Format formulir in-site ditaruh di branch "Form", nanti ketika acara sudah selesai akan di-merge kembali (karena lebih bagus).
 
 ### C. Embed Sheet Data Pendaftar - Ongoing
 

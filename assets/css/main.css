@@ -388,6 +388,8 @@ input[type="submit"]:hover {
   background-color: #6496FF;
   color: white;
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -431,6 +433,35 @@ input[type="submit"]:hover {
   background-color: lightgrey;
 }
 
+/* COPY TEXT FIELD */
+
+.rekening {
+  font-weight: 900;
+}
+
+.rekening-field {
+  font-family: "Roboto Mono", monospace;
+  color: grey;
+  padding: 10px;
+  width: 75px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.copy-button {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  padding: 3px;
+  padding-bottom: 5px;
+  margin: 5px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+}
+
+.copy-button:hover {
+  background-color: grey;
+}
 
 /* EMBED EXCEL */
 

@@ -111,18 +111,26 @@
                 <p>Silahkan baca dulu semua informasi mengenai acara & pengelolaan finansial di website ini.</p>
                 <h4>2. Pembayaran</h4>
                 <p>Lakukan pendaftaran melalui transfer bank di rekening berikut:</p>
-                <p>BNI: 123123123 (ASD)</p>
-                <p>BRI: 123123123 (SDA)</p>
-                <p>BCA: 123123123 (DAS)</p>
+                    <p id="rekening">
+                    <input type="text" readonly class="rekening-field" id="rekening-bni" value="123123123123"/>
+                    <button class="copy-button" onclick="copyText('rekening-bni')">⎘</button>
+                    <a class="gradient-text">BNI (Xxxx Xxxx)</a><br>
+                    <input type="text" readonly class="rekening-field" id="rekening-bri" value="231231231231"/>
+                    <button class="copy-button" onclick="copyText('rekening-bri')">⎘</button>
+                    <a class="gradient-text">BRI (Yyyy Yyyy)</a><br>
+                    <input type="text" readonly class="rekening-field" id="rekening-bca" value="312312312312"/>
+                    <button class="copy-button" onclick="copyText('rekening-bca')">⎘</button>
+                    <a class="gradient-text">BCA (Zzzz Zzzz)</a><br>
+                    </p>
                 <h4>3. Pendaftaran</h4>
-                <p>Isi formulir pendaftaran di platform Google form berikut dengan data yang faktual beserta melampirkan bukti pembayaran di tempat yang tersedia.</p>
+                <p>Isi formulir pendaftaran di platform Google Forms (tekan tombol berikut) dengan data yang faktual beserta melampirkan bukti pembayaran di tempat yang tersedia.</p>
                 <div class="form-container-section">
                     <button id="gform-button">Form Pendaftaran</button>
                 </div>
                 <h4>4. Tunggu Validasi</h4>
-                <p>Silahkan tunggu proses validasi pembayaran yang statusnya bisa di lihat di bagian website ini.</p>
+                <p>Silahkan tunggu proses validasi pembayaran yang statusnya bisa di lihat di bagian website ini. Data pendaftar diperbarui secara langsung, sedangkan validasi pembayaran dilakukan dalam waktu kurang dari 24 jam.</p>
                 <h4>5. Pendaftaran selesai</h4>
-                <p>Sampai jumpa di acara nanti & jangan lupa mengajak teman-teman yang lain :)</p>
+                <p>Jika keterangan sudah menunjukkan sudah tervalidasi, berarti pendaftaran telah selesai. Sampai jumpa di acara nanti & jangan lupa mengajak teman-teman yang lain :)</p>
             </div>
         </section>
         <section id="pendaftar">

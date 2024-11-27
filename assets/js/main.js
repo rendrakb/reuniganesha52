@@ -97,3 +97,16 @@ document.addEventListener("DOMContentLoaded", function () {
     initializeSlider();
   }
 });
+
+// rekening copy button
+window.copyText = function (inputId) {
+  var copyText = document.getElementById(inputId);
+  navigator.clipboard
+    .writeText(copyText.value)
+    .then(function () {
+      alert("Teks tersalin: " + copyText.value);
+    })
+    .catch(function (error) {
+      console.error("Eror dalam menyalin teks: ", error);
+    });
+};
