@@ -1,0 +1,24 @@
+<script>
+  function fetchData() {
+    google.script.run.withSuccessHandler(updateTable).getData();
+  }
+
+  function updateTable(data) {
+    var table = document.getElementById('dataTable');
+    data.forEach(function(row, rowIndex) {
+      var tr = document.createElement('tr');
+      row.forEach(function(cell) {
+        var td = document.createElement(rowIndex === 0 ? 'th' : 'td');
+        td.textContent = cell;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+  }
+
+  window.onload = fetchData;
+</script>
+<table id="dataTable">
+  <tbody>
+  </tbody>
+</table>
