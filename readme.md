@@ -4,7 +4,7 @@ Work in progress. Laman ini dibuat sebagai platform pembantu acara Reuni 10 Tahu
 
 ## Tree
 
-└───assets
+assets  
     ├───appscript : Google app script untuk filter, export, & show Google Sheets data pendaftar sebagai live .html  
     ├───css  
     ├───data      : Data rencana finansial  
