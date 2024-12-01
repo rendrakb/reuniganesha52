@@ -41,34 +41,6 @@ function closeMenu(event) {
   }
 }
 
-// favicon animation
-document.addEventListener("DOMContentLoaded", function () {
-  const favicon = document.getElementById("favicon");
-  let angle = 0;
-
-  function rotateFavicon() {
-    const canvas = document.createElement("canvas");
-    const context = canvas.getContext("2d");
-    const img = new Image();
-    img.src = "assets/images/icon.svg";
-
-    img.onload = function () {
-      const size = 32;
-      canvas.width = size;
-      canvas.height = size;
-      context.clearRect(0, 0, size, size);
-      context.save();
-      context.translate(size / 2, size / 2);
-      context.rotate((angle * Math.PI) / 180);
-      context.drawImage(img, -size / 2, -size / 2, size, size);
-      context.restore();
-      angle += 2;
-      favicon.href = canvas.toDataURL("image/png");
-    };
-  }
-  setInterval(rotateFavicon, 50);
-});
-
 // slider initialization
 function initializeSlider() {
   let currentSlide = 0;

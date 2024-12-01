@@ -55,6 +55,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 /* FOOTER */
@@ -458,9 +459,11 @@ input[type="submit"]:hover {
 .copy-button {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
-  padding: 3px;
-  padding-bottom: 5px;
-  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   background-color: lightgrey;
   border: 1px solid grey;
   border-radius: 5px;
@@ -471,14 +474,35 @@ input[type="submit"]:hover {
   background-color: grey;
 }
 
+/* BOXES */
+
+.content-box {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 100% !important;
+}
+
 /* EMBED EXCEL */
 
 #embed-excel {
   width: 100%;
   height: 800px;
-  border: none;
+  margin-top: 20px;
+  border: 1px solid grey;
   border-radius: 15px;
-  opacity: 75%;
+  opacity: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 #excel-container {
