@@ -22,5 +22,22 @@ function getData() {
   // re-insert the header row at the beginning
   data.unshift(header);
   
+  // calculate the total number of registrants (excluding header)
+  var totalPendaftar = data.length - 1;
+  
+  // calculate the sum of values in column C (jumlah)
+  var totalPenghadir = data.slice(1).reduce(function(sum, row) { // Skip the header row
+    return sum + (parseInt(row[2], 10) || 0); // Parse values as integers and sum them up
+  }, 0);
+  
+    // add another row at the end showing the total Penghadir
+  var penghadirRow = ["Total Penghadir", "", totalPenghadir, ""];
+  data.push(penghadirRow);
+
+  // add a new row at the end showing the total number of registrants
+  var totalRow = ["Total Pendaftar", "", totalPendaftar, ""];
+  data.push(totalRow);
+  
+  // return the data
   return data;
 }

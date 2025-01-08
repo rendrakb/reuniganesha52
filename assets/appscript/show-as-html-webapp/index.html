@@ -24,9 +24,43 @@
       td {
         background-color: transparent;
       }
+      .total-row {
+        font-weight: bold;
+        background-color: #f0f0f0;
+      }
     </style>
+    <script>
+      function fetchData() {
+        google.script.run.withSuccessHandler(updateTable).getData();
+      }
+
+      function updateTable(data) {
+        var table = document.getElementById('dataTable');
+        data.forEach(function(row, rowIndex) {
+          var tr = document.createElement('tr');
+          if (rowIndex >= data.length - 2) {
+            tr.classList.add('total-row');
+          }
+          row.forEach(function(cell) {
+            var td = document.createElement(rowIndex === 0 ? 'th' : 'td');
+            td.textContent = cell;
+            tr.appendChild(td);
+          });
+          table.appendChild(tr);
+        });
+
+        // Send total penghadir number to the parent window with specific origin
+        const totalPenghadir = data[data.length - 1][3];
+        window.parent.postMessage({ totalPenghadir: totalPenghadir }, 'http://127.0.0.1:3000'), 'https://rendrakb.github.io/reuniganesha52/';
+      }
+
+      window.onload = fetchData;
+    </script>
   </head>
   <body>
-    <?!= include('tableTemplate'); ?>
+    <table id="dataTable">
+      <tbody>
+      </tbody>
+    </table>
   </body>
 </html>

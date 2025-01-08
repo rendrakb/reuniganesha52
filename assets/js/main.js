@@ -118,3 +118,5 @@ var countdownFunction = setInterval(function () {
     document.getElementById("countdown").innerHTML = "Selamat Ramadan 2025";
   }
 }, 1000);
+
+//counter ??
