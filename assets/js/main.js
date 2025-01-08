@@ -82,3 +82,39 @@ window.copyText = function (inputId) {
       console.error("Eror dalam menyalin teks: ", error);
     });
 };
+
+//countdown
+var countDownDate = new Date("Feb 28, 2025 18:00:00").getTime();
+
+var countdownFunction = setInterval(function () {
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    .toString()
+    .padStart(2, "0");
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+    .toString()
+    .padStart(2, "0");
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+    .toString()
+    .padStart(2, "0");
+
+  document.getElementById("countdown").innerHTML =
+    days +
+    "&nbsp;: " +
+    hours +
+    "&nbsp;: " +
+    minutes +
+    "&nbsp;: " +
+    seconds +
+    "<br>" +
+    "menuju Ramadan 2025";
+
+  if (distance < 0) {
+    clearInterval(countdownFunction);
+    document.getElementById("countdown").innerHTML = "Selamat Ramadan 2025";
+  }
+}, 1000);

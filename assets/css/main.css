@@ -96,7 +96,7 @@ section {
 .slider-button {
   position: relative;
   font-family: "Roboto Mono", monospace;
-  font-size: 14px;
+  font-size: 16px;
   width: 30px;
   height: 30px;
   border-radius: 15%;
@@ -118,7 +118,7 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -507,4 +507,12 @@ input[type="submit"]:hover {
 
 #excel-container {
   width: 100%;
+}
+
+/* COUNTDOWN */
+#countdown {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
