@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
       "Konsumsi": "#9D0208",
       "Sewa Lokasi": "#D00000",
       "Dekor": "#DC2F02",
+      "Hiburan": "#F04604",
       "Perlengkapan": "#E85D04",
       "Lain-lain": "#F48C06",
       "Amal": "#FAA307",
-    };
-
+  };
+  
     const pendapatan = data[chart.pendapatanKey].filter(
       (item) => item.Item !== "Total"
     );

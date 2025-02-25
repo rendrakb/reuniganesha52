@@ -78,10 +78,10 @@
   "Pengeluaran 100": [
     {
       "Item": "Konsumsi",
-      "Harga": 60000,
+      "Harga": 50000,
       "Volume": 100,
       "Satuan": "Orang",
-      "Jumlah": 6000000
+      "Jumlah": 5000000
     },
     {
       "Item": "Sewa Lokasi",
@@ -92,6 +92,13 @@
     },
     {
       "Item": "Dekor",
+      "Harga": 1000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 1000000
+    },
+    {
+      "Item": "Hiburan",
       "Harga": 1000000,
       "Volume": 1,
       "Satuan": "Set",
@@ -145,10 +152,10 @@
   "Pengeluaran 150": [
     {
       "Item": "Konsumsi",
-      "Harga": 65000,
+      "Harga": 50000,
       "Volume": 150,
       "Satuan": "Orang",
-      "Jumlah": 9750000
+      "Jumlah": 7500000
     },
     {
       "Item": "Sewa Lokasi",
@@ -159,10 +166,17 @@
     },
     {
       "Item": "Dekor",
-      "Harga": 1750000,
+      "Harga": 2000000,
       "Volume": 1,
       "Satuan": "Set",
-      "Jumlah": 1750000
+      "Jumlah": 2000000
+    },
+    {
+      "Item": "Hiburan",
+      "Harga": 2000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 2000000
     },
     {
       "Item": "Perlengkapan",
@@ -212,10 +226,10 @@
   "Pengeluaran 200": [
     {
       "Item": "Konsumsi",
-      "Harga": 70000,
+      "Harga": 50000,
       "Volume": 200,
       "Satuan": "Orang",
-      "Jumlah": 14000000
+      "Jumlah": 10000000
     },
     {
       "Item": "Sewa Lokasi",
@@ -226,10 +240,17 @@
     },
     {
       "Item": "Dekor",
-      "Harga": 2000000,
+      "Harga": 3000000,
       "Volume": 1,
       "Satuan": "Set",
-      "Jumlah": 2000000
+      "Jumlah": 3000000
+    },
+    {
+      "Item": "Hiburan",
+      "Harga": 3000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 3000000
     },
     {
       "Item": "Perlengkapan",
@@ -279,10 +300,10 @@
   "Pengeluaran 250": [
     {
       "Item": "Konsumsi",
-      "Harga": 72500,
+      "Harga": 50000,
       "Volume": 250,
       "Satuan": "Orang",
-      "Jumlah": 18125000
+      "Jumlah": 12500000
     },
     {
       "Item": "Sewa Lokasi",
@@ -293,10 +314,17 @@
     },
     {
       "Item": "Dekor",
-      "Harga": 2375000,
+      "Harga": 4000000,
       "Volume": 1,
       "Satuan": "Set",
-      "Jumlah": 2375000
+      "Jumlah": 4000000
+    },
+    {
+      "Item": "Hiburan",
+      "Harga": 4000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 4000000
     },
     {
       "Item": "Perlengkapan",
@@ -346,10 +374,10 @@
   "Pengeluaran 300": [
     {
       "Item": "Konsumsi",
-      "Harga": 75000,
+      "Harga": 50000,
       "Volume": 300,
       "Satuan": "Orang",
-      "Jumlah": 22500000
+      "Jumlah": 15000000
     },
     {
       "Item": "Sewa Lokasi",
@@ -360,10 +388,17 @@
     },
     {
       "Item": "Dekor",
-      "Harga": 2500000,
+      "Harga": 5000000,
       "Volume": 1,
       "Satuan": "Set",
-      "Jumlah": 2500000
+      "Jumlah": 5000000
+    },
+    {
+      "Item": "Hiburan",
+      "Harga": 5000000,
+      "Volume": 1,
+      "Satuan": "Set",
+      "Jumlah": 5000000
     },
     {
       "Item": "Perlengkapan",
